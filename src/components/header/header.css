@@ -39,7 +39,7 @@
 /*Action Link*/
 .active-link,
 .nav-link:hover{
-    color: var(--title-color-dark);
+    color: #000000;
 }
 
 /*Break point*/
@@ -97,7 +97,9 @@
         display: block;
     }
 }
-
+.scroll-header{
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
 /*for small device*/
 @media screen and (max-width: 350px) {
     .nav-menu{

@@ -1,7 +1,21 @@
-import React from 'react';
+import React , {useRef} from 'react';
+
+import emailjs from '@emailjs/browser';
+
 import "./contact.css"
 
 const Contact = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_s3um5ji', 'template_lrf9vjh', form.current, {
+        publicKey: 'bmwzeJQrQvRalxCvk',
+      })
+      e.target.reset()
+  };
   return (
     <section className="contact section">
         <h2 className="section-title">Get in touch</h2>
@@ -22,9 +36,6 @@ const Contact = () => {
                             <i className="bx bx-right-arrow-alt  contact-button-icon"></i>
                         </a>
                     </div>
-                </div>
-
-                <div className="contact-info">
                     <div className="contact-card">
                         <i className="uil uil-linkedin-alt contact-card-icon"></i>
                         <h3 className="contact-card-title">LinkedIn</h3>
@@ -35,9 +46,6 @@ const Contact = () => {
                             <i className="bx bx-right-arrow-alt  contact-button-icon"></i>
                         </a>
                     </div>
-                </div>
-
-                <div className="contact-info">
                     <div className="contact-card">
                         <i className="uil uil-github-alt contact-card-icon"></i>
                         <h3 className="contact-card-title">Github</h3>
@@ -50,10 +58,14 @@ const Contact = () => {
                     </div>
                 </div>
 
+               
+
+               
+
             </div>
              <div className="contact-content">
-                <h3 className="contact-title">Send MEssage</h3>
-                <form action="" className="contact-form">
+                <h3 className="contact-title">Send Message</h3>
+                <form ref={form} onSubmit={sendEmail} className="contact-form">
                     <div className="contact-form-div">
                         <label  className="contact-form-tag">Name</label>
                         <input type="text" name='name' className="contact-form-input" placeholder='Enter youe name' />

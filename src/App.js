@@ -6,6 +6,8 @@ import About from './components/about/About';
 import Skill from './components/skill/Skill';
 import Qualification from './components/qualifications/Qualification';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import Scrollup from './components/scroll/Scrollup';
 const App = () => {
   return (
     <div>
@@ -16,7 +18,10 @@ const App = () => {
       <Skill/>
       <Qualification/>
       <Contact/>
+      
       </main>
+      <Footer/>
+      <Scrollup/>
     </div>
   )
 }
