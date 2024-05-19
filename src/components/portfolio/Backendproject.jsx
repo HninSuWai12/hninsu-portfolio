@@ -1,10 +1,12 @@
 import React from 'react'
 import travellingImg from "../../assets/images.png";
+import estateImg from "../../assets/real.png";
+import posImg from "../../assets/pos1.jpg";
 const Backendproject = () => {
   return (
     <div className="projects-content">
     <div className="project-card">
-<img src={travellingImg} className='project-img' alt="" />
+<img src={estateImg} className='project-img' alt="" />
 <h3 className="project-title">
 Real Estate
 </h3>
@@ -54,7 +56,7 @@ Blog System like Medium Platform.
 </div>
 
 <div className="project-card">
-<img src={travellingImg} className='project-img' alt="" />
+<img src={posImg} className='project-img' alt="" />
 <h3 className="project-title">
 POS System
 </h3>
