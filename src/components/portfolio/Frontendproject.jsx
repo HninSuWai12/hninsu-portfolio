@@ -1,5 +1,9 @@
 import React from 'react'
-import travellingImg from "../../assets/download (2).jpg"
+import travellingImg from "../../assets/travel.jpg"
+import yogaImg from "../../assets/yoga.png";
+import adminImg from "../../assets/admin.png";
+import storeImg from "../../assets/store.png";
+
 const Frontendproject = () => {
   return (
     <div className="projects-content">
@@ -19,8 +23,8 @@ const Frontendproject = () => {
                 </a>
 
 
-<a href="https://github.com/HninSuWai12" className="project-button">
-                    See More{" "}
+<a href="https://travel-design.vercel.app/" className="project-button">
+                    Go website{" "}
                     <i className="bx bx-right-arrow-alt  project-card-icon"></i>
                 </a>
 
@@ -29,7 +33,7 @@ const Frontendproject = () => {
     </div>
 
     <div className="project-card">
-    <img src={travellingImg} className='project-img' alt="" />
+    <img src={yogaImg} className='project-img' alt="" />
     <h3 className="project-title">
     Yoga Website
 </h3>
@@ -44,8 +48,8 @@ const Frontendproject = () => {
                 </a>
 
 
-<a href="https://github.com/HninSuWai12" className="project-button">
-                    See More{" "}
+<a href="https://subtle-pithivier-1723a0.netlify.app/" className="project-button">
+                    Go website{" "}
                     <i className="bx bx-right-arrow-alt  project-card-icon"></i>
                 </a>
 
@@ -54,7 +58,7 @@ const Frontendproject = () => {
     </div>
 
     <div className="project-card">
-    <img src={travellingImg} className='project-img' alt="" />
+    <img src={adminImg} className='project-img' alt="" />
     <h3 className="project-title">
     Admin Dashboard(React)
 </h3>
@@ -69,8 +73,8 @@ const Frontendproject = () => {
                 </a>
 
 
-<a href="https://github.com/HninSuWai12" className="project-button">
-                    See More{" "}
+<a href="https://ant-design-ashy.vercel.app/" className="project-button">
+                    Go website{" "}
                     <i className="bx bx-right-arrow-alt  project-card-icon"></i>
                 </a>
 
@@ -78,7 +82,7 @@ const Frontendproject = () => {
 </div>
     </div>
     <div className="project-card">
-    <img src={travellingImg} className='project-img' alt="" />
+    <img src={storeImg} className='project-img' alt="" />
     <h3 className="project-title">
     Fake store(React)
 </h3>
@@ -93,8 +97,8 @@ const Frontendproject = () => {
                 </a>
 
 
-<a href="https://github.com/HninSuWai12" className="project-button">
-                    See More{" "}
+<a href="https://fake-store-five-swart.vercel.app/" className="project-button">
+                    Go Website{" "}
                     <i className="bx bx-right-arrow-alt  project-card-icon"></i>
                 </a>
 

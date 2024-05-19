@@ -10,7 +10,7 @@ const Project = () => {
   }
   return (
     <div className="projects section" id="portfolio">
-    <h2 className="section-title">Projects</h2>
+    <h2 className="section-title">Portfolio</h2>
     <span className="section-subtitle">
       My Project Experience
     </span>
